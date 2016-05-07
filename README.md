@@ -1,5 +1,5 @@
 # injor
-一个换肤框架，出自[android-change-skin]（https://github.com/hack2ware/android-change-skin.git）框架,这里发布到jcenter上了，使用compile "com.sien:injor:0.1.0"引入。
+一个换肤框架，出自<a href="https://github.com/hack2ware/android-change-skin.git">android-change-skin</a>框架,这里发布到jcenter上了，使用compile "com.sien:injor:0.1.0"引入。
 
 
 使用说明
