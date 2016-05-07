@@ -30,5 +30,3 @@ proguard/
 
 # Android Studio captures folder
 captures/
-local.properties
-gradle.properties
