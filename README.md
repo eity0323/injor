@@ -62,6 +62,7 @@ paddingdrawable textview绘制图片（Drawable类型） 注：TextView limit
 8、自定义换肤类型，必须继承自ISkinProcessor类，需重写getName方法，返回换肤类型的名称，还需要重写process(Activity activity, View v, String resName, ResourceManager resourceManager, boolean isInUiThread)方法，实现具体的替换操作。
 
 例如：
+```
 /**
  * 切换textview的paddingDrawable
  * Created by suneee012 on 2016/3/29.
@@ -125,7 +126,7 @@ public class PaddingDrawableProcessor extends ISkinProcessor{
         }
     }
 }
-	
+```	
 【注意事项】：
 
 1、不管是内置主题、插件主题，资源最好都是完整的一套（缺失资源使用应用apk中默认风格）
