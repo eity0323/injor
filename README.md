@@ -5,7 +5,8 @@
 
 【换肤类型】：
 
-------------------------------框架提供类型
+------------------------------框架提供类型-----------------------------
+
 typeface 字体 （Typeface类型） 注：TextView limit
 textSize 字体大小 (dimen类型) 注：TextView limit
 text 文字（string类型） 注：TextView limit
@@ -14,7 +15,8 @@ src 图片文件 (drawable类型) 注：ImageView limit
 background 背景（drawable类型|color）
 divider 分割线(drawable类型) 注：ListView limit
 
--------------------------------自定义扩展类型
+-------------------------------自定义扩展类型--------------------------
+
 paddingdrawable textview绘制图片（Drawable类型） 注：TextView limit
 
 【使用方式】：
