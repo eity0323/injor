@@ -46,38 +46,38 @@ def licenseUrls = ['http://www.apache.org/licenses/LICENSE-2.0.txt']
 //        }
 //    }
 //}
-install {
-    repositories.mavenInstaller {
-        // This generates POM.xml with proper parameters
-        pom {
-            project {
-                packaging 'aar'
-                // Add your description here
-                name 'Android BounceProgressBar Widget' //项目描述
-                url PROJ_WEBSITEURL
-                // Set your license
-                licenses {
-                    license {
-                        name 'The Apache Software License, Version 2.0'
-                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-                    }
-                }
-                developers {
-                    developer {
-                        id DEVELOPER_ID   //填写的一些基本信息
-                        name DEVELOPER_NAME
-                        email DEVELOPER_EMAIL
-                    }
-                }
-                scm {
-                    connection PROJ_WEBSITEURL
-                    developerConnection PROJ_VCSURL
-                    url PROJ_WEBSITEURL
-                }
-            }
-        }
-    }
-}
+//install {
+//    repositories.mavenInstaller {
+//        // This generates POM.xml with proper parameters
+//        pom {
+//            project {
+//                packaging 'aar'
+//                // Add your description here
+//                name 'Android BounceProgressBar Widget' //项目描述
+//                url PROJ_WEBSITEURL
+//                // Set your license
+//                licenses {
+//                    license {
+//                        name 'The Apache Software License, Version 2.0'
+//                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+//                    }
+//                }
+//                developers {
+//                    developer {
+//                        id DEVELOPER_ID   //填写的一些基本信息
+//                        name DEVELOPER_NAME
+//                        email DEVELOPER_EMAIL
+//                    }
+//                }
+//                scm {
+//                    connection PROJ_WEBSITEURL
+//                    developerConnection PROJ_VCSURL
+//                    url PROJ_WEBSITEURL
+//                }
+//            }
+//        }
+//    }
+//}
 
 task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
