@@ -30,3 +30,8 @@ proguard/
 
 # Android Studio captures folder
 captures/
+
+# personal configuration info
+local.properties
+gradle.properties
+*.properties
