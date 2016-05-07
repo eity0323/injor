@@ -4,56 +4,16 @@ project.archivesBaseName = PROJ_ARTIFACTID
 
 apply plugin: 'maven-publish'
 apply plugin: 'com.jfrog.bintray'
-apply plugin: 'com.github.dcendents.android-maven'
+//apply plugin: 'com.github.dcendents.android-maven'
 
-def licenseUrls = ['http://www.apache.org/licenses/LICENSE-2.0.txt']
-
-//install{
-//    repositories {
-//        mavenInstaller {
-//            pom.project {
-//                // Description
-//                name PROJ_NAME
-//                description PROJ_DESCRIPTION
-//                url PROJ_WEBSITEURL
-//
-//                // Archive
-//                groupId project.group
-//                artifactId PROJ_ARTIFACTID
-//                version project.version
-//
-//                // License
-//                inceptionYear inception
-//                licenses {
-//                    licenseNames.eachWithIndex { ln, li ->
-//                        license {
-//                            name ln
-//                            url licenseUrls[li]
-//                        }
-//                    }
-//                }
-//                developers {
-//                    developer {
-//                        name DEVELOPER_NAME
-//                    }
-//                }
-//                scm {
-//                    connection PROJ_VCSURL
-//                    developerConnection PROJ_VCSURL
-//                    url PROJ_WEBSITEURL
-//                }
-//            }
-//        }
-//    }
-//}
 //install {
 //    repositories.mavenInstaller {
 //        // This generates POM.xml with proper parameters
 //        pom {
 //            project {
-//                packaging 'aar'
+//                packaging 'jar'
 //                // Add your description here
-//                name 'Android BounceProgressBar Widget' //项目描述
+//                name PROJ_DESCRIPTION //项目描述
 //                url PROJ_WEBSITEURL
 //                // Set your license
 //                licenses {
@@ -70,7 +30,7 @@ def licenseUrls = ['http://www.apache.org/licenses/LICENSE-2.0.txt']
 //                    }
 //                }
 //                scm {
-//                    connection PROJ_WEBSITEURL
+//                    connection PROJ_VCSURL
 //                    developerConnection PROJ_VCSURL
 //                    url PROJ_WEBSITEURL
 //                }
