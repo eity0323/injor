@@ -1,5 +1,6 @@
 # injor
-一个换肤框架
+一个换肤框架，出自[android-change-skin]（https://github.com/hack2ware/android-change-skin.git）框架,这里发布到jcenter上了，使用compile "com.sien:injor:0.1.0"引入。
+
 
 使用说明
 
@@ -20,8 +21,9 @@ divider 分割线(drawable类型) 注：ListView limit
 paddingdrawable textview绘制图片（Drawable类型） 注：TextView limit
 
 【使用方式】：
+
 1、build.gradle依赖中添加引用：
-compile "com.sien:injor:0.1.0"
+	compile "com.sien:injor:0.1.0"
 
 2、Application中初始化换肤框架
 	SkinManager sm = SkinManager.getInstance().init(this);
@@ -58,6 +60,7 @@ compile "com.sien:injor:0.1.0"
 		SkinManager.getInstance().apply(this);
 		
 8、自定义换肤类型，必须继承自ISkinProcessor类，需重写getName方法，返回换肤类型的名称，还需要重写process(Activity activity, View v, String resName, ResourceManager resourceManager, boolean isInUiThread)方法，实现具体的替换操作。
+
 例如：
 /**
  * 切换textview的paddingDrawable
@@ -124,7 +127,9 @@ public class PaddingDrawableProcessor extends ISkinProcessor{
 }
 	
 【注意事项】：
+
 1、不管是内置主题、插件主题，资源最好都是完整的一套（缺失资源使用应用apk中默认风格）
+
 2、（内置主题）需要一套默认皮肤，正常的命名方式，其他风格的皮肤，需要在正常命名后加上相应的后缀，格式如下：
 	默认风格：资源名称.xml 
 	红色风格：资源名称_red.xml
