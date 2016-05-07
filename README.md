@@ -23,38 +23,52 @@ paddingdrawable textview绘制图片（Drawable类型） 注：TextView limit
 【使用方式】：
 
 1、build.gradle依赖中添加引用：
+```
 	compile "com.sien:injor:0.1.0"
+```
 
 2、Application中初始化换肤框架
+```
 	SkinManager sm = SkinManager.getInstance().init(this);
+```
 	
 3、注册自定义换肤类型（可选）
+```
 	sm.addProcessor(new PaddingDrawableProcessor());
+```
 	
 4、需要换肤的页面中注册/取消注册
+```
 	SkinManager.getInstance().register(this);
 	SkinManager.getInstance().unregister(this);
+```
 	
 5、换肤
+```
 	SkinManager.getInstance().loadInternalSkin("", null);//切换默认风格
 	SkinManager.getInstance().loadInternalSkin("red", null);//切换内置红色主题风格
 	SkinManager.getInstance().loadPluginSkin(Environment.getExternalStorageDirectory() + File.separator + "ysyskin.apk", "com.suneee.ysyskin", null);//切换插件apk中的风格（注：插件中皮肤的名称是用默认的资源名称）
-
+```
 6、对于需要换肤的控件需要添加tag标签，格式如下：
 	android:tag = “skin:资源名称:资源类型”
 对同一个组件需要替换多个属性使用“|”间隔
 	android:tag = “skin:资源名称:资源类型|skin:资源名称:资源类型”
 
 例：
+```
 	skin:tab_main_selector:textColor
 	skin:tab_main_selector:textColor|skin:maintab_1_selector:paddingdrawable
-	
+```	
 7、对于动态添加的组件，需要做特殊处理
 	组件应用皮肤资源：
 		。动态添加tag属性
+		```
 			textView.setTag("skin:tab_main_selector:textColor|skin:maintab_1_selector:paddingdrawable");
+		```
 		。应用皮肤资源
+		```
 			SkinManager.getInstance().injectSkinAsync(textView);
+		```
 		
 	页面级重新应用皮肤资源：
 		SkinManager.getInstance().apply(this);
@@ -136,13 +150,17 @@ public class PaddingDrawableProcessor extends ISkinProcessor{
 	红色风格：资源名称_red.xml
 	
 例：
+```
 	maintab_1_selector.xml
 	maintab_1_selector_red.xml
+```
 	
 3、（插件主题）apk中皮肤名称与应用默认皮肤名称一致：
 	应用apk：资源名称.jpg 
 	皮肤插件apk：资源名称.jpg 
 例：
+```
 	maintab_1_selector.jpg
 	maintab_1_selector.jpg	
+```
 
