@@ -1,7 +1,7 @@
 # injor
-一个换肤框架，出自<a href="https://github.com/hack2ware/android-change-skin.git">android-change-skin</a>框架,这里发布到jcenter上了，使用时直接引用compile "com.sien:injor:0.1.0"。
+一个换肤框架，出自<a href="https://github.com/hack2ware/android-change-skin.git">android-change-skin</a>框架,这里发布到jcenter上了，使用时直接引用compile "com.sien:injor:0.1.0@aar"。
 
-injor库生成jar包并发布的过程在<a href="https://sieness.wordpress.com/">这里</a>
+injor库生成jar包并发布到jcenter的过程在<a href="https://sieness.wordpress.com/">这里</a>
 
 
 
@@ -27,7 +27,7 @@ paddingdrawable textview绘制图片（Drawable类型） 注：TextView limit
 
 1、build.gradle依赖中添加引用：
 ```
-	compile "com.sien:injor:0.1.0"
+	compile "com.sien:injor:0.1.0@aar"
 ```
 
 2、Application中初始化换肤框架
